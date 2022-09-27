@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @sarguna07
+- 👋 Hi, I’m Sarguna
 - 💻 FullStack Developer
 - 🌱 Likes to learn new techs
 - 📫 How to reach me https://sarguna07.github.io/ || https://sarguna-portfolio.web.app/
