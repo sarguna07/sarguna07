@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @sarguna07
 - 💻 FullStack Developer
 - 🌱 Likes to learn new techs
-- 📫 How to reach me https://sarguna07.github.io/ or https://sarguna-portfolio.web.app/
+- 📫 How to reach me https://sarguna07.github.io/ || https://sarguna-portfolio.web.app/
 
 <!---
 sarguna07/sarguna07 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
