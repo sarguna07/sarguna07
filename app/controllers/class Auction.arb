@@ -1,0 +1,64 @@
+class Auction
+  attr_reader :bids
+
+  def initialize
+    @bids = []
+  end
+
+  def place_bid(bid)
+    @bids << bid
+  end
+
+  def lowest_bid
+    sorted_bids = @bids.sort_by { |bid| bid.amount }
+    lowest_bid = sorted_bids.first
+    sorted_bids.each do |bid|
+      if bid.amount == lowest_bid.amount
+        return bid
+      else
+        break
+      end
+    end
+    lowest_bid
+  end
+end
+
+
+class Bid
+  attr_reader :amount, :bidder
+
+  def initialize(amount, bidder)
+    @amount = amount
+    @bidder = bidder
+  end
+end
+
+auction = Auction.new
+auction.place_bid(Bid.new(100, "John Doe"))
+auction.place_bid(Bid.new(200, "Jane Doe"))
+auction.place_bid(Bid.new(150, "Jim Smith"))
+auction.place_bid(Bid.new(100, "John Smith"))
+auction.place_bid(Bid.new(100, "John Lee"))
+auction.place_bid(Bid.new(100, "Jane Lee"))
+auction.place_bid(Bid.new(100, "Jackson Lee"))
+auction.place_bid(Bid.new(100, "Ava Wilson"))
+
+lowest_bid = auction.lowest_bid
+puts "Lowest bid: #{lowest_bid.amount} by #{lowest_bid.bidder}"
+
+"pooja.singh@bzinga.com"
+
+def count_words(text)
+  words = text.split(" ")
+  word_count = {}
+  words.each do |word|
+    if word_count[word]
+      word_count[word] += 1
+    else
+      word_count[word] = 1
+    end
+  end
+  word_count
+end
+
+
